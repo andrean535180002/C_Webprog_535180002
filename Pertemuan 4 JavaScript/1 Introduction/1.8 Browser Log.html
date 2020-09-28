@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Browser Log</title>
+
+    <style>
+        .MakeRed {
+            color:red;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function WriteLog(LogText) {
+            document.getElementById("cLine1").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+            console.log(LogText);
+        }
+    </script>
+
+</head>
+
+<body>
+    <button type="button" onclick='WriteLog("Log this")'>Jawaban</button>
+    <p id="cLine1">What is Lorem Ipsum?</p>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>For Loop</title>
+
+    <script>
+        var str = "Hi There! ";
+        function ForLoop(iteration) {
+            for (i = 0; i < iteration; i++) {
+                document.getElementById("oResult").innerHTML += str + "<br />";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="number" id="iLoop" placeholder="Masukkan banyaknya pengulangan yang diinginkan" style="width: 500px;">
+    <button type="button" onclick='ForLoop(document.getElementById("iLoop").value)'>Kerjakan</button>
+
+    <p id="oResult"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript In Body</title>
+
+    <style>
+        .MakeGreen {
+            color: green;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button type="button" onclick='changeLine1Style()'>Hijau</button>
+    <p id="cLine1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+
+    <br />
+
+    <button type="button" onclick='ChangeStyle("cLine2","Hide")'>Sembunyikan</button>
+    <button type="button" onclick='ChangeStyle("cLine2","Show")'>Tampilkan</button>
+    <p id="cLine2">
+        What is Lorem Ipsum?
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it to make a 
+        type specimen book.
+    </p>
+
+    <script>
+        function changeLine1Style() {
+            document.getElementById("cLine1").className = "MakeGreen";
+        }
+        function ChangeStyle(id, classname) {
+            document.getElementById(id).className = classname;
+        }
+    </script>
+
+</body>
+
+</html>

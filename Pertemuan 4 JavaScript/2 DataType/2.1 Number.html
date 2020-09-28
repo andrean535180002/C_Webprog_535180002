@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number</title>
+
+    <script>
+        function ChangeContent(id, num) {
+            var x;
+            x = 8;
+            var res = num + x;
+            document.getElementById(id).innerHTML = "8 + " + num + " = " + res;
+            document.getElementById(id).innerHTML = "8 + " + num + " = " + num + 8;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <button type="button" onclick='ChangeContent("cLine1", 427)'>Hasil</button>
+    <p id="cLine1">Lorem Ipsum!</p>
+
+</body>
+
+</html>

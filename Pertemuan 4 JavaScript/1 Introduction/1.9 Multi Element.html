@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi Element</title>
+
+    <style>
+        .MakeGreen {
+            color:green;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function ChangeAll(str){
+            document.getElementById("cLine1").innerHTML = str;
+            document.getElementById("cLine2").innerHTML = str;
+            document.getElementById("cLine1").className="MakeGreen";
+            document.getElementById("cLine2").className="MakeGreen";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <p id="cLine1">
+        Lorem Ipsum is simply dummy text of the printing and 
+        typesetting industry.
+    </p>
+
+    <br>
+
+    <p id="cLine2">
+        Lorem Ipsum has been the industry's standard dummy text 
+        ever since the 1500s, when an unknown printer took a galley 
+        of type and scrambled it to make a type specimen book.
+    </p>
+
+    <br>
+
+    <button type="button" onclick='ChangeAll("Lorem Ipsum!")'>Change All</button>
+
+</body>
+
+</html>

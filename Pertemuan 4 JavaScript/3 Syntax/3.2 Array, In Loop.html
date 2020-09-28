@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array, In Loop</title>
+
+    <script>
+
+        var bjadwal = [];
+
+        function addjadwal(pjadwal) {
+            bjadwal.push(pjadwal);
+            document.getElementById("ijadwal").value = "";
+            document.getElementById("ijadwal").focus();
+            console.log(bjadwal.length);
+        }
+
+        function InLoop() {
+            var item;
+            for (item of bjadwal) {
+                document.getElementById("oResult").innerHTML += item + "<br />";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="ijadwal" placeholder="Masukkan jadwal anda disini" style="width: 500px;">
+    <button type="button" onclick='addjadwal(document.getElementById("ijadwal").value)'>Tambah</button>
+    <button type="button" onclick='InLoop()'>Tampilkan Semua</button>
+
+    <br><br>
+
+    <p id="oResult"></p>
+
+</body>
+
+</html>
