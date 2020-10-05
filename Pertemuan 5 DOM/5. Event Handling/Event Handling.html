@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming</title>
+</head>
+<body>
+    
+    <p>
+        Jangan klik tombol dibawah ini, BERBAHAYA!
+    </p>
+        
+    <button type="button" id="tombol"  >Tombol Ini</button>
+        
+    <script>
+        function buttonClick(){
+            alert('Selamat, anda telah klik tombol ini!');
+        }
+
+        document.getElementById('tombol').addEventListener('click',buttonClick);
+    </script>
+
+</body>
+</html>

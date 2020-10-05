@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Web Programming</title>
+</head>
+<body>
+    <p>Silahkan pilih warna kesukaan kamu:</p>
+    <p>
+        <input type="radio" name="warna" value="Warna Hijau"> Hijau
+        <input type="radio" name="warna" value="Warna Merah"> Merah
+        <input type="radio" name="warna" value="Warna Biru"> Biru
+        <input type="radio" name="warna" value="Warna Kuning"> Kuning
+        <input type="radio" name="warna" value="Warna Hitam"> Hitam
+    </p>
+    <p>
+        <button id="tombol">Pilih Warna ini</button>
+    </p>
+    <script>
+        var btn = document.getElementById('tombol');
+
+        btn.addEventListener('click', () => {
+            var pilih = document.getElementsByName('warna');
+            pilih.forEach((warna) => {
+                if (warna.checked) {
+                    alert(`Warna kesukaanmu adalah ${warna.value}`);
+                }
+            })
+        });
+    </script>
+</body>
+</html>

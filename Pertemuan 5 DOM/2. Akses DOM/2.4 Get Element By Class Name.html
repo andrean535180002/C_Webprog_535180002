@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming</title>
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="item highlight">Galeri</li>
+                    <li class="item">Artikel</li>
+                    <li class="item highlight">Kategori</li>
+                    <li class="item">Daftar</li>
+                </ul>
+            </nav>
+            <h1>Artikel</h1>
+        </header>
+        <section>
+            <article>
+                <h2 class="heading-secondary">Desain</h2>
+            </article>
+            <article>
+                <h2 class="heading-secondary">Tema</h2>
+            </article>
+        </section>
+    </div>
+
+    <script>
+        let menu = document.getElementById('menu');
+        let items = menu.getElementsByClassName('item');
+        
+        let data1 = [].map.call(items, item => item.textContent);
+        
+        console.log(data1);
+
+        let elements = document.getElementsByClassName('heading-secondary');
+
+        let data2 = [].map.call(elements, elem => elem.textContent);
+
+        console.log(data2);
+    </script>
+    
+</body>
+</html>
