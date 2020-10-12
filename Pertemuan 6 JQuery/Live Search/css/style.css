@@ -1,0 +1,69 @@
+body{
+    background-image: linear-gradient(to bottom, moccasin ,tomato);
+}
+
+#searcharea{
+    margin: 0 auto;
+    text-align: center;
+    background:steelblue;
+    padding: 20px;
+    width: 35%;
+}
+
+#searcharea label{
+    font: bold 1.3em arial;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: yellow;
+}
+
+#searcharea p{
+    margin: 0;
+    line-height: 1em;
+    padding-bottom: 5px;
+}
+
+#searcharea input{
+    width: 80%;
+    text-align: center;
+}
+
+#output{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#output ul{
+    list-style: none;
+}
+
+#output ul li{
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 5px;
+    animation: myanimation 1s;
+    transition: height 0.3s ease-out;
+
+}
+
+#output li:hover{
+    background: lightgray;
+    min-height: 110px;
+    height: 250px;
+    overflow: visible;
+}
+
+#output img{
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+}
+
+@keyframes myanimation{
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
